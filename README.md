@@ -19,7 +19,7 @@ Bienvenido a la Aplicación de Reseñas de Libros, una plataforma donde los aman
 | 🖥️ **Sitio Web** | [Enlace de Producción](https://comfy-fudge-aee73b.netlify.app/#/) |
 | ⚙️ **API** | [URL del API](https://booksapireview-production.up.railway.app/swagger/index.html) |
 | 📂 **Repositorio del API** | [Repositorio del API](https://github.com/jeyfredc/BooksAPIReview) |  
-| 📂 **Repositorio del Frontend** | [Repositorio del Frontend](https://github.com/jeyfredc/ReviewsWebApp) | 
+| 📂 **Repositorio del Frontend** | [Repositorio del Frontend](https://github.com/jeyfredc/BooksPageReview) | 
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -34,7 +34,6 @@ Bienvenido a la Aplicación de Reseñas de Libros, una plataforma donde los aman
 - [x] Visualización de libros populares y recientes
 - [x] Sistema de reseñas y calificaciones
 - [x] Búsqueda avanzada de libros
-- [x] Perfiles de usuario personalizables
 - [x] Diseño responsivo para todos los dispositivos
 - [x] Sistema de autenticación
 
@@ -68,10 +67,11 @@ Bienvenido a la Aplicación de Reseñas de Libros, una plataforma donde los aman
    yarn install
    ```
 
-3. Configura las variables de entorno:
+3. Variables de entorno:
    ```bash
-   cp .env.example .env
-   # Edita el archivo .env con tus credenciales
+   #Ya estan en el repositorio por practicidad en los archivos
+   .env.development
+   .env.production
    ```
 
 4. Inicia el servidor de desarrollo:

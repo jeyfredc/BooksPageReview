@@ -1,0 +1,55 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .loading-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  .spinner {
+    animation: spin 1s linear infinite;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    border-top: 0.5rem solid #00703c;
+    border-right: 0.5rem solid transparent;
+    position: absolute;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-text {
+    margin-top: 17rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 33px;
+    position: absolute;
+  }
+  

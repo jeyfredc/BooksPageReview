@@ -1,54 +1,127 @@
-# React + TypeScript + Vite
+# 📚 Aplicación de Reseñas de Libros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a la Aplicación de Reseñas de Libros, una plataforma donde los amantes de la lectura pueden compartir sus opiniones sobre sus libros favoritos, descubrir nuevas lecturas y conectarse con otros lectores.
 
-Currently, two official plugins are available:
+## 🌟 Características Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📖 Visualización de libros populares y recientes
+- ✍️ Sistema de reseñas y calificaciones
+- 🔍 Búsqueda avanzada de libros
+- 👥 Perfiles de usuario personalizables
+- 📱 Diseño responsivo para todos los dispositivos
 
-## Expanding the ESLint configuration
+## 🚀 Despliegue
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Enlaces Importantes
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+| Recurso | URL |
+|---------|-----|
+| 🖥️ **Sitio Web** | [Enlace de Producción](https://comfy-fudge-aee73b.netlify.app/#/) |
+| ⚙️ **API** | [URL del API](https://booksapireview-production.up.railway.app/swagger/index.html) |
+| 📂 **Repositorio del API** | [Repositorio del API](https://github.com/jeyfredc/BooksAPIReview) |  
+| 📂 **Repositorio del Frontend** | [Repositorio del Frontend](https://github.com/jeyfredc/ReviewsWebApp) | 
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Frontend**: React, TypeScript, Vite, Zustand, React Router, React Icons, React Toastify, Tailwind CSS
+- **Backend**: [.Net 8 ]
+- **Base de Datos**: [PostgreSQL]
+- **Autenticación**: [No se implemento JWT o Auth]
+- **Despliegue**: [Netlify  para el Frontend y Railway para el Backend]
+
+## 📚 Características del Proyecto
+
+- [x] Visualización de libros populares y recientes
+- [x] Sistema de reseñas y calificaciones
+- [x] Búsqueda avanzada de libros
+- [x] Perfiles de usuario personalizables
+- [x] Diseño responsivo para todos los dispositivos
+- [x] Sistema de autenticación
+
+
+## Dockerfile despliegue del Backend
+
+| Recurso | URL |
+|---------|-----|
+| 🖥️ **Dockerfile** | [Dockerfile](https://github.com/jeyfredc/BOOKSAPIReview/blob/main/Dockerfile) |
+
+## 🚀 Empezando
+
+### Requisitos Previos para el despliegue del Frontend
+
+- Node.js (versión 16 o superior)
+- npm o yarn
+
+
+### Instalación del Frontend
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/jeyfredc/ReviewsWebApp.git
+   cd ReviewsWebApp
+   ```
+
+2. Instala las dependencias:
+   ```bash
+   npm install
+   # o
+   yarn install
+   ```
+
+3. Configura las variables de entorno:
+   ```bash
+   cp .env.example .env
+   # Edita el archivo .env con tus credenciales
+   ```
+
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   # o
+   yarn dev
+   ```
+### Instalación del Backend
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/jeyfredc/BooksAPIReview.git
+   cd BooksAPIReview
+   ```
+
+2. Instala las dependencias:
+   ```bash
+   dotnet restore
+   ```
+
+3. Inicia el servidor de desarrollo:
+   ```bash
+   dotnet run
+   ```
+
+4. DefaultConnection:
+ ```bash 
+ Host=nozomi.proxy.rlwy.net;Port=57705;Database=railway;Username=postgres;Password=RwlvkenbtwHObjzUAZjPywkmLIiYXZut;Ssl Mode=Require;Trust Server Certificate=true;
+ ```
+
+## Recomendación
+
+1. Puedes utilizar Dveaber para visualizar la base de datos
+
+```bash
+Host: nozomi.proxy.rlwy.net
+Port: 57705
+Username: postgres
+Password: RwlvkenbtwHObjzUAZjPywkmLIiYXZut
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Puedes utilizar Postman para probar la APIs
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+URL: https://booksapireview-production.up.railway.app/swagger/index.html
 ```
+
+
+
+## 📧 Contacto
+
+Para más información, por favor contacta a [jeyfredc@gmail.com]
